@@ -1,0 +1,36 @@
+Oppgave 2 a
+Hva er størrelsesorden uttrykt i O-notasjon (dvs. vi behøver ikke finne c og N) for algoritmen når
+vekstfunksjonene er gitt som:
+
+i			4𝑛2 + 50𝑛 − 10 = O(n^2)
+
+ii			10𝑛 + 4log2 𝑛 + 30 = O(nlogn)
+
+iii			13𝑛3 + 22𝑛2 + 50𝑛 + 20 = O(n^3)
+
+iv			35 + 13log2^𝑛 = (nlogn)
+
+
+Oppgave 2b
+sum = 0;
+for (int i = n; i > 1; i = i/2) {
+sum = sum + i;
+}
+Finn antall tilordninger (=) for algoritmen og 
+effektiviteten uttrykt i O-notasjon. Begrunn svaret. Vi ser
+kun på løkkekroppen når vi analyserer løkker!
+
+O(n) 
+
+Oppgave 2 c
+Gitt følgende algoritme:
+sum = 0;
+for (int i = 1; i <= n; i++) {
+for (int j = 1; j <= n; j = j * 2) {
+sum += i * j;
+}
+}
+Finn antall tilordninger (=) for algoritmen og 
+effektiviteten uttrykt i O-notasjon. Begrunn svaret.
+
+O(n^2)
